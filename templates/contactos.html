@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+<div class="container">
+	{% for contacto in contactos %}
+		<p>{{ contacto.name }}</p>
+		<p>{{ contacto.phone_number }}</p>
+		<p><a href="mailto:{{ contacto.email }}">{{ contacto.email }}</a></p>
+	{% endfor %}
+</div>
